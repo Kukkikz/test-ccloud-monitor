@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  ccloud_exporter:
+    ports:
+      - 2112:2112
+    image: dabz/ccloudexporter
+    environment:
+      CCLOUD_API_KEY: ${CCLOUD_API_KEY}
+      CCLOUD_API_SECRET: ${CCLOUD_API_SECRET}
+    command: -cluster ${CCLOUD_CLUSTER}
+  datadog:
+    image: datadog/agent:latest
+    links:
+     - ccloud_exporter
+    environment:
+     - DD_API_KEY=${DD_API_KEY}
+     - DD_TAGS="env:production service:confluent"
+    volumes:
+     - ./openmetrics.yaml:/etc/datadog-agent/conf.d/openmetrics.yaml:ro
+     - /var/run/docker.sock:/var/run/docker.sock
+     - /proc/:/host/proc/:ro
+     - /sys/fs/cgroup:/host/sys/fs/cgroup:ro

@@ -1,0 +1,177 @@
+# HELP ccloud_metric_active_connection_count The count of active authenticated connections.
+# TYPE ccloud_metric_active_connection_count gauge
+ccloud_metric_active_connection_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g"} 2 1627280580000
+# HELP ccloud_metric_partition_count The number of partitions.
+# TYPE ccloud_metric_partition_count gauge
+ccloud_metric_partition_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g"} 10 1627280580000
+# HELP ccloud_metric_received_bytes The delta count of bytes of the customer's data received from the network. Each sample is the number of bytes received since the previous data sample. The count is sampled every 60 seconds.
+# TYPE ccloud_metric_received_bytes gauge
+ccloud_metric_received_bytes{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-customer-data"} 0 1627280580000
+ccloud_metric_received_bytes{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-topic"} 0 1627280580000
+# HELP ccloud_metric_received_records The delta count of records received. Each sample is the number of records received since the previous data sample. The count is sampled every 60 seconds.
+# TYPE ccloud_metric_received_records gauge
+ccloud_metric_received_records{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-customer-data"} 0 1627280580000
+ccloud_metric_received_records{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-topic"} 0 1627280580000
+# HELP ccloud_metric_request_count The delta count of requests received over the network. Each sample is the number of requests received since the previousdata point. The count sampled every 60 seconds.
+# TYPE ccloud_metric_request_count gauge
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="ApiVersions"} 0 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="CreateTopics"} 0 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="DescribeConfigs"} 0 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="DescribeGroups"} 0 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="Fetch"} 7 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="FindCoordinator"} 2 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="Heartbeat"} 4 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="JoinGroup"} 2 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="ListGroups"} 0 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="ListOffsets"} 0 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="Metadata"} 4 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="OffsetCommit"} 1 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="OffsetFetch"} 1 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="Produce"} 0 1627280580000
+ccloud_metric_request_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",type="SyncGroup"} 1 1627280580000
+# HELP ccloud_metric_retained_bytes The current count of bytes retained by the cluster. The count is sampled every 60 seconds.
+# TYPE ccloud_metric_retained_bytes gauge
+ccloud_metric_retained_bytes{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-customer-data"} 3996 1627280580000
+ccloud_metric_retained_bytes{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-schema-topic"} 480 1627280580000
+ccloud_metric_retained_bytes{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-topic"} 4163 1627280580000
+# HELP ccloud_metric_sent_bytes The delta count of bytes of the customer's data sent over the network. Each sample is the number of bytes sent since the previous data point. The count is sampled every 60 seconds.
+# TYPE ccloud_metric_sent_bytes gauge
+ccloud_metric_sent_bytes{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-customer-data"} 0 1627280580000
+ccloud_metric_sent_bytes{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-topic"} 230 1627280580000
+# HELP ccloud_metric_sent_records The delta count of records sent. Each sample is the number of records sent since the previous data point. The count is sampled every 60 seconds.
+# TYPE ccloud_metric_sent_records gauge
+ccloud_metric_sent_records{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-customer-data"} 0 1627280580000
+ccloud_metric_sent_records{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g",partition="",topic="demo-topic"} 30 1627280580000
+# HELP ccloud_metric_successful_authentication_count The delta count of successful authentications.Each sample is the number of successful authentications since the previousdata point. The count sampled every 60 seconds.
+# TYPE ccloud_metric_successful_authentication_count gauge
+ccloud_metric_successful_authentication_count{cluster_id="lkc-xnw7g",kafka_id="lkc-xnw7g"} 7 1627280580000
+# HELP ccloud_metrics_api_request_latency Metrics API request latency
+# TYPE ccloud_metrics_api_request_latency gauge
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/active_connection_count",ruleNumber="0"} 0.3635248
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/partition_count",ruleNumber="0"} 1.0356357
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/received_bytes",ruleNumber="0"} 1.1566701
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/received_records",ruleNumber="0"} 0.6685174
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/request_count",ruleNumber="0"} 0.6689903
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/retained_bytes",ruleNumber="0"} 1.1535852
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/sent_bytes",ruleNumber="0"} 1.1186471
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/sent_records",ruleNumber="0"} 1.0081954
+ccloud_metrics_api_request_latency{metric="io.confluent.kafka.server/successful_authentication_count",ruleNumber="0"} 0.360066
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 1.44e-05
+go_gc_duration_seconds{quantile="0.25"} 0.0001046
+go_gc_duration_seconds{quantile="0.5"} 0.0001937
+go_gc_duration_seconds{quantile="0.75"} 0.0003007
+go_gc_duration_seconds{quantile="1"} 0.012165
+go_gc_duration_seconds_sum 0.1635167
+go_gc_duration_seconds_count 540
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 11
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.14.15"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 3.15084e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 7.73421032e+08
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.548816e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 7.778623e+06
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 6.55967962554384e-05
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 3.574024e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 3.15084e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 6.1202432e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 5.087232e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 10163
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 6.0768256e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 6.6289664e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.6272807286632018e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 7.788786e+06
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 13888
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 135864
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 163840
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 2.119144e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 819200
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 819200
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 7.4531072e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 11
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 56.59
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1.048576e+06
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 12
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 2.5239552e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.62727515573e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 7.32594176e+08
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes -1
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 378
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0

@@ -1,0 +1,6 @@
+instances:
+  - prometheus_url: http://ccloud_exporter:2112/metrics
+    namespace: test
+    metrics:
+      - ccloud*
+      - io.confluent.kafka.server*
